@@ -1,6 +1,6 @@
 # Rizz
 
-This is a simple Flask application created with love for my amazing non existant girlfriend. 💖 The app showcases my programming skills and dedication to making something special for her.
+This is a simple Flask application created with love for my amazing non-existent girlfriend. 💖 The app showcases my programming skills and dedication to making something special for her.
 
 ## Features
 
