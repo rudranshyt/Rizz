@@ -1,0 +1,31 @@
+<!--
+    author: Rudransh Shukla
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='welcomeStyle.css') }}">
+    <title>Welcome Princess</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="welcome-text">
+                <h1>Welcome Princess</h1>
+            </div>
+            <div class="click-here-btn">
+                <button type="button" id="button">Click Here</button>
+            </div>
+        </div>
+        <div class="rizz-text">
+            <h1>Rizz</h1>
+            <h4>Designed with 💖 by Rudransh Shukla</h4>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='welcome.js') }}"></script>
+</body>
+</html>

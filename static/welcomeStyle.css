@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0c1442, #283349);
+    color: #fff;
+}
+
+.welcome-text {
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 7s forwards;
+}
+
+.welcome-text h1, .welcome-text h2 {
+    padding-top: 100%;
+}
+
+.click-here-btn {
+    margin-top: 20px;
+    text-align: center;
+    animation: slideIn 10s forwards;
+    animation-delay: 7s; 
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #0c1442;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 2s, color 0.3s;
+}
+
+button:hover {
+    background-color: #283349;
+    color: #fff;
+}
+
+.rizz-text {
+    text-align: left;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+    animation-delay: 3s; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+    }
+}
