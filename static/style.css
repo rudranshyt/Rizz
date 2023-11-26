@@ -1,19 +1,142 @@
-body {
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .flower {
+.wrap {
+    width: 100%;
+    height: 300px;
     position: relative;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 40px solid #ffcc00;
-    border-radius: 50%;
-  }
-  
+}
+
+.center {
+    width: 150px;
+    height: 150px;
+    border-radius: 999px;
+    background-color: yellow;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+.petal {
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: palevioletred;
+    transform-origin: center 150px;
+    z-index: 2;
+}
+
+.petal:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.petal:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+.petal:nth-child(3) {
+    transform: rotate(135deg);
+}
+
+.petal:nth-child(4) {
+    transform: rotate(180deg);
+}
+
+.petal:nth-child(5) {
+    transform: rotate(225deg);
+}
+
+.petal:nth-child(6) {
+    transform: rotate(270deg);
+}
+
+.petal:nth-child(7) {
+    transform: rotate(315deg);
+}
+
+.petal:nth-child(8) {
+    transform: rotate(360deg);
+}
+
+.stem{
+    height: 500px;
+    width: 20px;
+    display: block;
+    background-color: green;
+    position: absolute;
+    top: 225px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.leaf-1 {
+    width: 60px;
+    height: 120px;
+    background-color: #00ff00;
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(10%) rotate(45deg);
+    clip-path: polygon(-15% 0%, 115% 0%, 47% 100%);
+    border-radius: 50% 50% 0 0;
+}
+.leaf-2{
+    width: 60px;
+    height: 120px;
+    background-color: #00ff00;
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform:translateX(-127%) rotate(-45deg);
+    clip-path: polygon(-15% 0%, 115% 0%, 47% 100%);
+    border-radius: 50% 50% 0 0;
+}
+.leaf-3{
+    width: 60px;
+    height: 120px;
+    background-color: #00ff00;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-127%) rotate(-45deg);
+    clip-path: polygon(-15% 0%, 115% 0%, 47% 100%);
+    border-radius: 50% 50% 0 0;
+}
+.leaf-4{
+    width: 60px;
+    height: 120px;
+    background-color: #00ff00;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(10%) rotate(45deg);
+    clip-path: polygon(-15% 0%, 115% 0%, 47% 100%);
+    border-radius: 50% 50% 0 0;
+}
+.leaf-5{
+    width: 60px;
+    height: 120px;
+    background-color: #00ff00;
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    transform: translateX(-127%) rotate(-45deg);
+    clip-path: polygon(-15% 0%, 115% 0%, 47% 100%);
+    border-radius: 50% 50% 0 0;
+}
+.leaf-6{
+    width: 60px;
+    height: 120px;
+    background-color: #00ff00;
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    transform: translateX(10%) rotate(45deg);
+    clip-path: polygon(-15% 0%, 115% 0%, 47% 100%);
+    border-radius: 50% 50% 0 0;
+}

@@ -1,9 +1,12 @@
+# author: Rudransh Shukla
+# description: rizz flask app with spotify integration
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
+def function():
     return render_template('index.html')
 
 if __name__ == '__main__':
